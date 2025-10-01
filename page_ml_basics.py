@@ -29,20 +29,14 @@ def page_ml_basics():
 
     col4, col5 = st.columns(2)
     with col4:
-        st.markdown("""
-        <div style="background-color:#fefefe; padding:15px; border-radius:12px; box-shadow:1px 1px 4px rgba(0,0,0,0.1);">
-            <h4>🔍 ML là gì?</h4>
-            <p>Khái niệm cơ bản, ML khác lập trình truyền thống thế nào.</p>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(video_card("ML là gì?",
+                               "Khái niệm cơ bản, ML khác lập trình truyền thống thế nào.",
+                               "https://youtu.be/T3Az85XpyUo"), unsafe_allow_html=True)
 
     with col5:
-        st.markdown("""
-        <div style="background-color:#fefefe; padding:15px; border-radius:12px; box-shadow:1px 1px 4px rgba(0,0,0,0.1);">
-            <h4>📊 Data, Feature, Label là gì?</h4>
-            <p>Làm rõ các khái niệm quan trọng trước khi code.</p>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(video_card("📊 Data, Feature, Label là gì?",
+                               "Làm rõ các khái niệm quan trọng trước khi code.",
+                               "https://youtu.be/etxB49bmtEU"), unsafe_allow_html=True)
 
     st.markdown("---")
     st.subheader("🛠️ 5 Project Thực Hành (Code ngay)")
